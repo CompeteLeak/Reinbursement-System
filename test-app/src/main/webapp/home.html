@@ -1,0 +1,223 @@
+<div class="jumbotron" id="homePage">
+
+
+	<h2 class="display-2">
+		Welcome To Ticket Counter
+		<center>
+			<span id="output" /> !</span>
+		</center>
+
+	</h2>
+
+
+	<!-- <span> <input type="hidden" id="output" value="${sessionScope.pONumb}"> </span> -->
+
+	<!--	<button class="btn btn-primary" data-toggle="modal"
+		data-target=".bs-example-modal-sm">Logout</button>
+	<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>
+						Logout <i class="fa fa-lock"></i>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<i class="fa fa-question-circle"></i> Are you sure you want to
+					log-off?
+				</div>
+				<div id="logout" class="modal-footer">
+					<a href="javascript:;" class="btn btn-primary btn-block">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-primary btn-m" data-toggle="modal"
+		data-target="#myModal">Logout</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Logout</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to log-off?</p>
+				</div>
+				<div id="logout" class="modal-footer">
+					<a href="javascript:;" class="btn btn-primary btn-block">Logout</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<button type="button" class="btn btn-info btn-m" data-toggle="modal"
+		data-target="#newModal">New Request</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="newModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">New Request</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+
+					<ul id="users-a" class="list-unstyled" role="menu">
+						<li>
+							<button type="button" class="btn btn-dark" id="travelButton">Travel
+								Reinbursement</button>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+
+								</div>
+								<input id="createUser" type="number" class="form-control"
+									aria-label="Amount (to the nearest dollar)">
+							</div>
+						</li>
+						<li>
+							<button type="button" class="btn btn-dark" id="houseButton">Housing
+								Reinbursement</button>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+
+								</div>
+								<input id="houser" type="number" class="form-control"
+									aria-label="Amount (to the nearest dollar)">
+							</div>
+						</li>
+						<li>
+							<button type="button" class="btn btn-dark" id="inonButton">Inconvenience
+								Reinbursement</button>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+
+								</div>
+								<input id="inconvy" type="number" class="form-control"
+									aria-label="Amount (to the nearest dollar)">
+							</div>
+						</li>
+
+					</ul>
+
+					<!--</div>-->
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="saveButton" class="btn btn-default"
+						data-dismiss="modal">Save</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!--	<div class="btn-group">
+		 <button id="populate" type="button" class="btn btn-secondary">
+			Past Tickets <span class="caret"></span>
+		</button> 
+		<ul id="users-b" class="dropdown-menu" role="menu">
+			<li><a href="#">Pending Travel Tickt</a></li>
+			<li><a href="#">Pending Housing Ticket</a></li>
+			<li><a href="#">Pending Inconvenience Ticket</a></li>
+			    <li class = "divider"></li>
+      <li><a href = "#">Separated link</a></li> 
+		</ul>
+	</div>-->
+
+	<!--	<div class="btn-group">
+		<button type="button" class="btn btn-primary dropdown-toggle"
+			data-toggle="dropdown">
+			New Requests <span class="caret"></span>
+		</button>
+		<ul id="users-a" class="dropdown-menu" role="menu">
+			<li>
+				<button type="button" class="btn btn-dark" id="travelButton">Travel
+					Reinbursement</button>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">$</span>
+					</div>
+					<input id="createUser" type="number" class="form-control"
+						aria-label="Amount (to the nearest dollar)">
+				</div>
+			</li>
+			<li>
+				<button type="button" class="btn btn-dark" id="houseButton">Housing
+					Reinbursement</button>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">$</span>
+					</div>
+					<input id="houser" type="number" class="form-control"
+						aria-label="Amount (to the nearest dollar)">
+				</div>
+			</li>
+			<li>
+				<button type="button" class="btn btn-dark" id="inonButton">Inconvenience
+					Reinbursement</button>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">$</span>
+					</div>
+					<input id="inconvy" type="number" class="form-control"
+						aria-label="Amount (to the nearest dollar)">
+				</div>
+			</li>
+		</ul>
+	</div>-->
+
+	<br> <br> <br> <br> <br> <br> <br> <br>
+
+
+	<div>
+		<div class="jumbotron">
+			<h3>View Your Reinbursement Tickets Below!</h3>
+		</div>
+		<table id="myTable" class="table table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Confirmation #</th>
+					<th scope="col">Reinbursemnt Ammount Requested</th>
+					<th scope="col">Type Of Reinbursement</th>
+					<th scope="col">Status of Reinbursement</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>$100</td>
+					<td>Travel Reinbursement</td>
+					<td>Pending</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>$90</td>
+					<td>Housing Reinbursement</td>
+					<td>Pending</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>$12</td>
+					<td>Inconvenience Reinbursement</td>
+					<td>Pending</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>

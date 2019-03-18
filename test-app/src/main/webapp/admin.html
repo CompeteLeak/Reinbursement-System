@@ -1,0 +1,77 @@
+<div class="jumbotron" id="loginForm">
+	<h3>Welcome Admin</h3>
+
+	<div>
+		<div class="jumbotron">
+			<h3>Approve/Deny Reinbursement Tickets Below!</h3>
+		</div>
+		<button class="btn btn-primary" data-toggle="modal"
+			data-target=".bs-example-modal-sm">Logout</button>
+
+		<div class="modal bs-example-modal-sm" tabindex="-1" role="dialog"
+			aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>
+							Logout <i class="fa fa-lock"></i>
+						</h4>
+					</div>
+					<div class="modal-body">
+						<i class="fa fa-question-circle"></i> Are you sure you want to
+						log-off?
+					</div>
+					<div id="logout" class="modal-footer">
+						<a href="javascript:;" class="btn btn-primary btn-block">Logout</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<table id="myTable" class="table table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Tracking #</th>
+					<th scope="col">Assoiated User</th>
+					<th scope="col">Reinbursemnt Ammount Requested</th>
+					<th scope="col">Type Of Reinbursement</th>
+					<th scope="col">Status of Reinbursement</th>
+				</tr>
+
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>SPACE</td>
+					<td>$100</td>
+					<td>Travel Reinbursement</td>
+					<td>Pending</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>SPACE</td>
+					<td>$90</td>
+					<td>Housing Reinbursement</td>
+					<td>
+						<!-- <li class="nav-item dropdown">
+							<p class="nav-link dropdown-toggle" role="button">Pending</p>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<p class="dropdown-item" href="#">Approve</p>
+								<div class="dropdown-divider"></div>
+								<p class="dropdown-item" href="#">Deny</p>
+							</div>
+					</li> --> Pending
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>SPACE</td>
+					<td>$12</td>
+					<td>Inconvenience Reinbursement</td>
+					<td>Pending</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
